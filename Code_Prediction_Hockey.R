@@ -16,12 +16,12 @@ library (pROC)
 
 # On importe les données nécessaires
 
-game_skater_stats <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/game_skater_stats.csv")
-player_info <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/player_info.csv")
-game_goalie_stats <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/game_goalie_stats.csv")
-game <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/game.csv")
-game_teams_stats <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/game_teams_stats.csv")
-team_info <- read.csv("C:/Users/antoi/Documents/Medas/Master2/Statistiques_2/exos_data/team_info.csv")
+game_skater_stats <- read.csv("C:/Users/AKIL/Documents/exos_data/game_skater_stats.csv")
+player_info <- read.csv("C:/Users/AKIL/Documents/exos_data/player_info.csv")
+game_goalie_stats <- read.csv("C:/Users/AKIL/Documents/exos_data/game_goalie_stats.csv")
+game <- read.csv("C:/Users/AKIL/Documents/exos_data/game.csv")
+game_teams_stats <- read.csv("C:/Users/AKIL/Documents/exos_data/game_teams_stats.csv")
+team_info <- read.csv("C:/Users/AKIL/Documents/exos_data/team_info.csv")
 
 # On dédoublonne certaines tables 
 game <- subset(game, !duplicated(game_teams_stats[,"game_id"]))
